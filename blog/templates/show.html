@@ -1,0 +1,21 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="card col-12">
+            <div class="card-title">
+                <h5 class="text-dark">
+                    {{ post.title }} by {{ post.author }} at {{ post.created_at|date:"F d, Y" }}
+                </h5>
+            </div>
+            <div class="card-content">
+                <div class="card-body">
+                    <div class="card-content card-height ">
+                        <p>{{ post.description }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
